@@ -1,0 +1,52 @@
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  extends: [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+  ],
+  plugins: ["react-hooks"],
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
+  rules: {
+    "@typescript-eslint/indent": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-empty-interface": 2,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "@typescript-eslint/prefer-interface": 0,
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+    "@typescript-eslint/camelcase": 0,
+    "react/prop-types": 0,
+    "react/no-children-prop": 1,
+    "react/display-name": 1,
+    "react/jsx-curly-brace-presence": 2,
+    "@typescript-eslint/explicit-function-return-type": 0,
+    "prettier/prettier": 1,
+    eqeqeq: 2,
+    "@typescript-eslint/no-unused-vars": [
+      2,
+      { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "no-nested-ternary": 2,
+    "@typescript-eslint/no-use-before-define": "warn",
+    "spaced-comment": ["error", "always", { exceptions: ["-+"] }],
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "react/jsx-handler-names": [
+      "warn",
+      {
+        eventHandlerPrefix: "handle|toggle",
+        checkLocalVariables: false,
+      },
+    ],
+    "react/jsx-boolean-value": "warn",
+    "no-duplicate-imports": "error",
+  },
+};
