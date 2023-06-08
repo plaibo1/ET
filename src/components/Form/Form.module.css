@@ -1,0 +1,49 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  max-width: 500px;
+}
+.form > label {
+  width: 100%;
+}
+.form > label > input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #797979;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.form > button {
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 1rem;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #4845ff;
+  color: #fff;
+  font-weight: bold;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.checkbox > input {
+  width: 50px;
+}
